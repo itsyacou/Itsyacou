@@ -4,32 +4,307 @@
 
 <head>
 
-  <meta charset="UTF-8">
+<meta charset="UTF-8">
 
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width,initial-scale=1">
 
-  <title>ItsYacou | Trades • Money • Life</title>
+<title>ItsYacou | Trades • Money • Life</title>
 
-  <meta
+<style>
 
-    name="description"
+*{box-sizing:border-box}
 
-    content="ItsYacou — electrician and creator helping the next generation discover skilled trades, build financial confidence, and create a better future."
+html{scroll-behavior:smooth}
 
-  >
+body{
 
-  <style>
+margin:0;
 
-    * {
+font-family:Arial,sans-serif;
 
-      margin: 0;
+background:#090909;
 
-      padding: 0;
+color:#fff;
 
-      box-sizing: border-box;
+}
 
-    }
+nav{
 
-    html {
+display:flex;
 
-      scroll-behavior: smooth;
+justify-content:space-between;
+
+align-items:center;
+
+padding:22px 7%;
+
+border-bottom:1px solid #222;
+section{
+
+padding:75px 7%;
+
+}
+
+.section-title{
+
+font-size:36px;
+
+margin-bottom:12px;
+
+}
+
+.section-subtitle{
+
+color:#999;
+
+margin-bottom:35px;
+
+}
+
+.cards{
+
+display:grid;
+
+grid-template-columns:repeat(3,1fr);
+
+gap:18px;
+
+}
+
+.card{
+
+background:#141414;
+
+border:1px solid #242424;
+
+border-radius:14px;
+
+padding:28px;
+
+}
+
+.card-number{
+
+color:#f5c542;
+
+font-size:14px;
+
+font-weight:bold;
+
+}
+
+.card h3{
+
+font-size:22px;
+
+margin:12px 0;
+
+}
+
+.card p{
+
+color:#aaa;
+
+line-height:1.6;
+
+}
+
+.about{
+
+background:#111;
+
+}
+
+.about-inner{
+
+max-width:750px;
+
+}
+
+.about p{
+
+color:#bbb;
+
+font-size:18px;
+
+line-height:1.7;
+
+}
+
+.cta{
+
+text-align:center;
+
+padding:90px 7%;
+
+}
+
+.cta h2{
+
+font-size:40px;
+
+margin-bottom:15px;
+
+}
+
+.cta p{
+
+color:#aaa;
+
+margin-bottom:30px;
+
+}
+
+footer{
+
+border-top:1px solid #222;
+
+padding:30px 7%;
+
+text-align:center;
+
+color:#777;
+
+font-size:14px;
+
+}
+
+@media(max-width:700px){
+
+.cards{grid-template-columns:1fr}
+
+.hero{min-height:75vh}
+
+nav{padding:18px 6%}
+
+section{padding:60px 6%}
+
+h1{letter-spacing:-2px}
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<nav>
+
+<div class="logo">ITS<span>YACOU</span></div>
+
+<a href="#about">ABOUT</a>
+
+</nav>
+
+<main>
+
+<section class="hero">
+
+<div class="hero-inner">
+
+<div class="badge">ELECTRICIAN • CREATOR</div>
+
+<h1>
+
+BUILD SKILLS.<br>
+
+BUILD WEALTH.<br>
+
+<span class="gold">BUILD YOUR FUTURE.</span>
+
+</h1>
+
+<p>
+
+Helping the next generation discover skilled trades,
+
+avoid unnecessary debt, and learn how to build a
+
+stronger financial future.
+
+</p>
+
+<div class="buttons">
+
+<a class="btn primary" href="#connect">FOLLOW THE JOURNEY</a>
+
+<a class="btn secondary" href="mailto:your@email.com">WORK WITH ME</a>
+
+</div>
+
+</div>
+
+</section>
+<section>
+
+<h2 class="section-title">WHAT I TALK ABOUT</h2>
+
+<p class="section-subtitle">Real experience. Practical information. No gatekeeping.</p>
+
+<div class="cards">
+
+<div class="card">
+
+<div class="card-number">01</div>
+
+<h3>THE TRADES ⚡</h3>
+
+<p>
+
+Apprenticeships, electrical work, union careers and
+
+real paths into the skilled trades.
+
+</p>
+
+</div>
+
+<div class="card">
+
+<div class="card-number">02</div>
+
+<h3>MONEY 💰</h3>
+
+<p>
+
+Building good money habits, investing early and
+
+using your income to create opportunities.
+
+</p>
+
+</div>
+
+<div class="card">
+
+<div class="card-number">03</d
+    <section class="cta" id="connect">
+
+<h2>LET'S BUILD. ⚡</h2>
+
+<p>Follow ItsYacou for trades, money and life.</p>
+
+<div class="buttons" style="justify-content:center">
+
+<a class="btn primary" href="#">INSTAGRAM</a>
+
+<a class="btn secondary" href="#">TIKTOK</a>
+
+<a class="btn secondary" href="mailto:your@email.com">PARTNERSHIPS</a>
+
+</div>
+
+</section>
+
+</main>
+
+<footer>
+
+© 2026 ItsYacou • Trades • Money • Life
+
+</footer>
+
+</body>
+
+</html>
