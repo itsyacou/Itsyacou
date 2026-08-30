@@ -1,304 +1,265 @@
 <!DOCTYPE html>
-
 <html lang="en">
-
 <head>
-
 <meta charset="UTF-8">
-
 <meta name="viewport" content="width=device-width,initial-scale=1">
-
-<title>ItsYacou | Trades • Money • Life</title>
+<title>ItsYacou | Trades • Wealth • NYC</title>
 
 <style>
-
 *{box-sizing:border-box}
-
 html{scroll-behavior:smooth}
 
 body{
-
 margin:0;
+font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Arial,sans-serif;
+background:#fff;
+color:#111;
+}
 
-font-family:Arial,sans-serif;
+a{text-decoration:none;color:inherit}
 
-background:#090909;
-
-color:#fff;
-
+.wrap{
+width:min(1120px,90%);
+margin:auto;
 }
 
 nav{
-
+height:76px;
 display:flex;
-
-justify-content:space-between;
-
 align-items:center;
-
-padding:22px 7%;
-
-border-bottom:1px solid #222;
-section{
-
-padding:75px 7%;
-
+justify-content:space-between;
+border-bottom:1px solid #eee;
 }
 
-.section-title{
-
-font-size:36px;
-
-margin-bottom:12px;
-
+.logo{
+font-weight:900;
+font-size:21px;
+letter-spacing:1px;
 }
 
-.section-subtitle{
-
-color:#999;
-
-margin-bottom:35px;
-
-}
-
-.cards{
-
-display:grid;
-
-grid-template-columns:repeat(3,1fr);
-
-gap:18px;
-
-}
-
-.card{
-
-background:#141414;
-
-border:1px solid #242424;
-
-border-radius:14px;
-
-padding:28px;
-
-}
-
-.card-number{
-
-color:#f5c542;
-
+nav a{
 font-size:14px;
-
-font-weight:bold;
-
+font-weight:700;
 }
 
-.card h3{
-
-font-size:22px;
-
-margin:12px 0;
-
-}
-
-.card p{
-
-color:#aaa;
-
-line-height:1.6;
-
-}
-
-.about{
-
-background:#111;
-
-}
-
-.about-inner{
-
-max-width:750px;
-
-}
-
-.about p{
-
-color:#bbb;
-
-font-size:18px;
-
-line-height:1.7;
-
-}
-
-.cta{
-
-text-align:center;
-
-padding:90px 7%;
-
-}
-
-.cta h2{
-
-font-size:40px;
-
-margin-bottom:15px;
-
-}
-
-.cta p{
-
-color:#aaa;
-
-margin-bottom:30px;
-
-}
-
-footer{
-
-border-top:1px solid #222;
-
-padding:30px 7%;
-
-text-align:center;
-
-color:#777;
-
-font-size:14px;
-
-}
-
-@media(max-width:700px){
-
-.cards{grid-template-columns:1fr}
-
-.hero{min-height:75vh}
-
-nav{padding:18px 6%}
-
-section{padding:60px 6%}
-
-h1{letter-spacing:-2px}
-
-}
 .hero{
+min-height:78vh;
 display:grid;
 grid-template-columns:1.1fr .9fr;
-align-items:center;
 gap:60px;
-min-height:80vh;
-padding:70px 7%;
-}
-
-.hero-copy{
-max-width:650px;
+align-items:center;
+padding:70px 0;
 }
 
 .eyebrow{
-color:#777;
 font-size:13px;
-font-weight:700;
+font-weight:800;
 letter-spacing:1.5px;
+color:#777;
 margin-bottom:20px;
 }
 
-.hero h1{
-font-size:clamp(52px,7vw,82px);
-line-height:.95;
+h1{
+font-size:clamp(56px,7vw,88px);
+line-height:.93;
 letter-spacing:-4px;
-margin:0 0 25px;
+margin:0;
 }
 
-.hero h1 span{
-color:#f5c542;
+h1 span{
+background:#f5c542;
+padding:0 8px;
 }
 
 .hero-text{
-font-size:18px;
-line-height:1.6;
-color:#777;
-max-width:580px;
+font-size:19px;
+line-height:1.65;
+color:#666;
+max-width:600px;
+margin:28px 0 0;
 }
 
-.hero-tag{
+.tag{
 font-size:13px;
-font-weight:800;
+font-weight:900;
 letter-spacing:2px;
 margin-top:22px;
 }
 
-.hero-actions{
+.actions{
 display:flex;
 gap:12px;
-margin-top:28px;
+margin-top:30px;
 }
 
-.hero-photo img{
+.btn{
+padding:15px 22px;
+border-radius:7px;
+font-weight:800;
+font-size:14px;
+}
+
+.primary{
+background:#111;
+color:#fff;
+}
+
+.secondary{
+border:1px solid #ccc;
+}
+
+.photo img{
 width:100%;
-max-width:430px;
 display:block;
-margin:auto;
-border-radius:12px;
+border-radius:10px;
 }
-
-.socials{
+    .socials{
 display:flex;
-gap:20px;
+gap:14px;
 margin-top:22px;
 }
 
 .socials a{
-color:#555;
-font-weight:700;
-text-decoration:none;
+width:42px;
+height:42px;
+border:1px solid #ddd;
+border-radius:50%;
+display:flex;
+align-items:center;
+justify-content:center;
+font-weight:800;
+font-size:13px;
 }
 
-@media(max-width:750px){
+section{
+padding:85px 0;
+}
+
+.section-label{
+font-size:12px;
+font-weight:900;
+letter-spacing:2px;
+color:#777;
+margin-bottom:12px;
+}
+
+h2{
+font-size:clamp(36px,5vw,58px);
+line-height:1.05;
+letter-spacing:-2px;
+margin:0;
+}
+
+.copy{
+max-width:760px;
+font-size:18px;
+line-height:1.7;
+color:#666;
+margin-top:20px;
+}
+
+.grid{
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:18px;
+margin-top:38px;
+}
+
+.card{
+border:1px solid #e5e5e5;
+border-radius:14px;
+padding:28px;
+background:#fff;
+}
+
+.card strong{
+display:block;
+font-size:13px;
+margin-bottom:18px;
+}
+
+.card h3{
+font-size:24px;
+margin:0 0 10px;
+}
+
+.card p{
+color:#666;
+line-height:1.6;
+margin:0;
+}
+
+.brand{
+background:#111;
+color:#fff;
+}
+
+.brand .copy{
+color:#bbb;
+}
+
+.brand .btn{
+display:inline-block;
+margin-top:28px;
+background:#f5c542;
+color:#111;
+}
+
+footer{
+border-top:1px solid #eee;
+padding:28px 0;
+font-size:14px;
+color:#777;
+}
+
+@media(max-width:760px){
+
 .hero{
 grid-template-columns:1fr;
-gap:35px;
-padding:55px 6%;
+gap:34px;
+padding:50px 0 65px;
 }
 
-.hero-copy{
-order:1;
+.photo{
+order:-1;
 }
 
-.hero-photo{
-order:2;
-}
-
-.hero h1{
+h1{
 letter-spacing:-2px;
 }
 
-.hero-actions{
+.actions{
 flex-direction:column;
 }
 
-.hero-actions .btn{
+.btn{
 text-align:center;
 }
-}
-</style>
 
+.grid{
+grid-template-columns:1fr;
+}
+
+section{
+padding:65px 0;
+}
+}
+
+</style>
 </head>
 
 <body>
 
+<div class="wrap">
+
 <nav>
-
-<div class="logo">ITS<span>YACOU</span></div>
-
+<div class="logo">ITSYACOU</div>
 <a href="#about">ABOUT</a>
-
 </nav>
 
-<main>
 <section class="hero">
 
-<div class="hero-copy">
+<div>
 
 <div class="eyebrow">
 HELPING YOUNG ADULTS AVOID DEBT
@@ -313,97 +274,233 @@ BUILD WEALTH.<br>
 Practical lessons from the skilled trades, money, and life to help the next generation build more options.
 </p>
 
-<div class="hero-tag">
+<div class="tag">
 TRADES • WEALTH • NYC
 </div>
 
-<div class="hero-actions">
+<div class="actions">
 <a class="btn primary" href="#about">START HERE</a>
-<a class="btn secondary" href="#connect">WORK WITH ME</a>
+<a class="btn secondary" href="#brands">WORK WITH ME</a>
 </div>
 
 <div class="socials">
-<a href="#">Instagram</a>
-<a href="#">TikTok</a>
+<a href="#">IG</a>
+<a href="#">TT</a>
 </div>
 
 </div>
 
-<div class="hero-photo">
+<div class="photo">
 <img src="IMG_8530.jpeg" alt="Yacou">
 </div>
 
 </section>
+.socials{
+display:flex;
+gap:14px;
+margin-top:22px;
+}
 
-<section>
+.socials a{
+width:42px;
+height:42px;
+border:1px solid #ddd;
+border-radius:50%;
+display:flex;
+align-items:center;
+justify-content:center;
+font-weight:800;
+font-size:13px;
+}
 
-<h2 class="section-title">WHAT I TALK ABOUT</h2>
+section{
+padding:85px 0;
+}
 
-<p class="section-subtitle">Real experience. Practical information. No gatekeeping.</p>
+.section-label{
+font-size:12px;
+font-weight:900;
+letter-spacing:2px;
+color:#777;
+margin-bottom:12px;
+}
 
-<div class="cards">
+h2{
+font-size:clamp(36px,5vw,58px);
+line-height:1.05;
+letter-spacing:-2px;
+margin:0;
+}
 
-<div class="card">
+.copy{
+max-width:760px;
+font-size:18px;
+line-height:1.7;
+color:#666;
+margin-top:20px;
+}
 
-<div class="card-number">01</div>
+.grid{
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:18px;
+margin-top:38px;
+}
 
-<h3>THE TRADES ⚡</h3>
+.card{
+border:1px solid #e5e5e5;
+border-radius:14px;
+padding:28px;
+background:#fff;
+}
 
-<p>
+.card strong{
+display:block;
+font-size:13px;
+margin-bottom:18px;
+}
 
-Apprenticeships, electrical work, union careers and
+.card h3{
+font-size:24px;
+margin:0 0 10px;
+}
 
-real paths into the skilled trades.
+.card p{
+color:#666;
+line-height:1.6;
+margin:0;
+}
 
+.brand{
+background:#111;
+color:#fff;
+}
+
+.brand .copy{
+color:#bbb;
+}
+
+.brand .btn{
+display:inline-block;
+margin-top:28px;
+background:#f5c542;
+color:#111;
+}
+
+footer{
+border-top:1px solid #eee;
+padding:28px 0;
+font-size:14px;
+color:#777;
+}
+
+@media(max-width:760px){
+
+.hero{
+grid-template-columns:1fr;
+gap:34px;
+padding:50px 0 65px;
+}
+
+.photo{
+order:-1;
+}
+
+h1{
+letter-spacing:-2px;
+}
+
+.actions{
+flex-direction:column;
+}
+
+.btn{
+text-align:center;
+}
+
+.grid{
+grid-template-columns:1fr;
+}
+
+section{
+padding:65px 0;
+}
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="wrap">
+
+<nav>
+<div class="logo">ITSYACOU</div>
+<a href="#about">ABOUT</a>
+</nav>
+
+<section class="hero">
+
+<div>
+
+<div class="eyebrow">
+HELPING YOUNG ADULTS AVOID DEBT
+</div>
+
+<h1>
+BUILD WEALTH.<br>
+<span>SKIP DEBT.</span>
+</h1>
+
+<p class="hero-text">
+Practical lessons from the skilled trades, money, and life to help the next generation build more options.
 </p>
+
+<div class="tag">
+TRADES • WEALTH • NYC
+</div>
+
+<div class="actions">
+<a class="btn primary" href="#about">START HERE</a>
+<a class="btn secondary" href="#brands">WORK WITH ME</a>
+</div>
+
+<div class="socials">
+<a href="#">IG</a>
+<a href="#">TT</a>
+</div>
 
 </div>
 
-<div class="card">
-
-<div class="card-number">02</div>
-
-<h3>MONEY 💰</h3>
-
-<p>
-
-Building good money habits, investing early and
-
-using your income to create opportunities.
-
-</p>
-
-</div>
-
-<div class="card">
-
-<div class="card-number">03</d
-    <section class="cta" id="connect">
-
-<h2>LET'S BUILD. ⚡</h2>
-
-<p>Follow ItsYacou for trades, money and life.</p>
-
-<div class="buttons" style="justify-content:center">
-
-<a class="btn primary" href="#">INSTAGRAM</a>
-
-<a class="btn secondary" href="#">TIKTOK</a>
-
-<a class="btn secondary" href="mailto:your@email.com">PARTNERSHIPS</a>
-
+<div class="photo">
+<img src="IMG_8530.jpeg" alt="Yacou">
 </div>
 
 </section>
+</div>
 
-</main>
+<section class="brand" id="brands">
+<div class="wrap">
 
+<div class="section-label">PARTNERSHIPS</div>
+
+<h2>LET'S WORK<br>TOGETHER.</h2>
+
+<p class="copy">
+I partner with brands that genuinely fit my audience across the skilled trades, workwear, tools, money, education, and career development.
+</p>
+
+<a class="btn" href="mailto:zanga2244@gmail.com">
+WORK WITH ME →
+</a>
+
+</div>
+</section>
+<div class="wrap">
 <footer>
-
-© 2026 ItsYacou • Trades • Money • Life
-
+© 2026 ITSYACOU
 </footer>
+</div>
 
 </body>
-
 </html>
